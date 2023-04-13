@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
-import Register from './components/screen/Register';
-import UserList from './components/screen/UserListPage';
+import Register from './compoments/screen/Register';
+import UserList from './compoments/screen/UserListPage';
 
 const App = () => {
   return (
