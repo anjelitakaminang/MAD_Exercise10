@@ -1,27 +1,27 @@
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
-import { Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-const IndexButton = ({ label, onSbumit }) => {
+const Button = ({ label, onPress }) => {
     return (
-        <TouchableOpacity onPress={onSbumit} style={styles.button}>
-            <Text style={styles.labelButton}>{label}</Text>
+        <TouchableOpacity style={styles.button} onPress={onPress}>
+            <Text style={styles.buttonText}>{label}</Text>
         </TouchableOpacity>
     );
 };
 
-export default IndexButton;
+export default Button;
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: '#355C7D',
+        backgroundColor: '#Ff7300',
+        alignItems: 'center',
+        paddingVertical: 15,
         borderRadius: 10,
-        paddingVertical: 10,
     },
-    labelButton: {
-        textAlign: 'center',
-        fontSize: 18,
+    buttonText: {
         color: 'white',
-        fontWeight: '700',
-        fontFamily: 'roboto',
+        fontSize: 18,
+        fontWeight: '600',
     },
 });
+
